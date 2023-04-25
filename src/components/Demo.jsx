@@ -76,9 +76,9 @@ const Demo = () => {
             <div
               key={`link-${index}`}
               onClick={() => setArticle(item)}
-              className="link+card"
+              className="link_card"
             >
-              <div className="copy_btn" onClick={handleCopy(item.url)}>
+              <div className="copy_btn" onClick={() => handleCopy(item.url)}>
                 <img
                   src={copied === item.url ? tick : copy}
                   alt="copy_icon"
